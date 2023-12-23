@@ -22,8 +22,8 @@ async function generateSummary(text) {
 
     return response.data.choices[0].text.trim();
   } catch (error) {
-    console.error('Error in generateSummary:', error.message);
-    throw error; // Re-throw the error to propagate it
+  
+    throw error.message; // Re-throw the error to propagate it
   }
 }
 

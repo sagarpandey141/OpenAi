@@ -22,7 +22,7 @@ app.post('/summarize', async (req, res) => {
     res.json({ summary });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Please Insert Api kEY ' });
+    res.status(500).json({ error: 'This Is Error From OpenAi We are Getting High Number Of User Write Now Please Try Again' });
   }
 });
 
